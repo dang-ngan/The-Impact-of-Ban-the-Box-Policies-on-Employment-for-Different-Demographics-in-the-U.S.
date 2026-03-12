@@ -21,6 +21,7 @@ Utilizing a **Difference-in-Differences (DiD)** framework, the study compares em
 * **Gender Divergence:** A sharp contrast between genders, with significant gains for males but equal losses for females, suggesting job substitution within low-skilled sectors.
 
 
+
 ***
 
 ## Methodology
@@ -33,7 +34,6 @@ $$Employed_{it} = \alpha + \beta(Treat_{i} \times Post_{t}) + \gamma X_{it} + \d
 * **$Treat_{i} \times Post_{t}$**: The interaction term (Difference-in-Differences) representing the policy effect.
 * **$X_{it}$**: Vector of individual-level controls (age, sex, race, and education).
 * **$\delta_{s}$ and $\theta_{t}$**: State and Year-Quarter fixed effects to control for geographic and temporal trends.
-
 
 ***
 
@@ -49,7 +49,7 @@ $$Employed_{it} = \alpha + \beta(Treat_{i} \times Post_{t}) + \gamma X_{it} + \d
 ## Repository Structure
 | File Name | Description |
 | :--- | :--- |
-| `The Impact of "Ban the Box" Policies on Employment for Different Demographics in the U.S.ipynb` | Main Python notebook with full analysis and visualizations. |
+| [📂 Ban_the_Box_Impact.ipynb](Ban_the_Box_Impact.ipynb) | **Main Analysis:** Data cleaning, WLS regressions, and all Python-based visualizations. |
 | `results_data.zip` | Archive containing all CSV result outputs for reproducibility. |
 | `tableau_results_subgroup_did.csv` | Regression results for the primary aggregate sample. |
 | `tableau_results_racial_impact.csv` | Coefficients for racial heterogeneity analysis. |
@@ -59,11 +59,14 @@ $$Employed_{it} = \alpha + \beta(Treat_{i} \times Post_{t}) + \gamma X_{it} + \d
 ***
 
 ## How to Reproduce
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/dang-ngan/Ban-the-Box-Impact.git](https://github.com/dang-ngan/Ban-the-Box-Impact.git)
-    ```
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/dang-ngan/The-Impact-of-Ban-the-Box-Policies-on-Employment-for-Different-Demographics-in-the-U.S..git](https://github.com/dang-ngan/The-Impact-of-Ban-the-Box-Policies-on-Employment-for-Different-Demographics-in-the-U.S..git)
+
 2.  **Install Dependencies:** Ensure you have `pandas`, `statsmodels`, `matplotlib`, and `seaborn` installed.
+
 3.  **Download Raw Data:** Download `data_ban_the_box.csv` from the link provided in the Data Sources section and place it in the project root.
+
 4.  **Extract Results:** Unzip `results_data.zip` to access the regression tables.
+
 5.  **Run the Analysis:** Open and execute the cells in the `.ipynb` file.
